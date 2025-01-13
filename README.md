@@ -36,3 +36,4 @@ process.py should be run first to process the data and save it in a csv file. Th
 ```bash
 python main.py
 ```
+## 4. The dataset that is used in this project is the UCI ML Drug Review dataset. You can find more information about the dataset [here](https://www.kaggle.com/datasets/jessicali9530/kuc-hackathon-winter-2018).

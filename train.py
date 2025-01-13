@@ -49,6 +49,7 @@ print(y_pred_bow)
 
 # Evaluate the model
 print("Accuracy of bow:", accuracy_score(y_test, y_pred_bow))
+print("Evaluation of bow model")
 print(classification_report(y_test, y_pred_bow))
 
 # Train the model
@@ -60,6 +61,7 @@ y_pred_tfidf = model_tfidf.predict(X_test_tfidf)
 
 # Evaluate the model
 print("Accuracy:", accuracy_score(y_test, y_pred_tfidf))
+print("Evaluation of tfidf model")
 print(classification_report(y_test, y_pred_tfidf))
 
 from sklearn.linear_model import LogisticRegression,SGDClassifier
@@ -81,10 +83,12 @@ y_pred_svm_tfidf = svm.predict(X_test_tfidf)
 
 # Evaluate the model
 print("Accuracy of svm bow:", accuracy_score(y_test, y_pred_svm_bow))
+print("Evaluation of svm bow model")
 print(classification_report(y_test, y_pred_svm_bow))
 
 # Evaluate the model
 print("Accuracy of svm tfidf:", accuracy_score(y_test, y_pred_svm_tfidf))
+print("Evaluation of svm tfidf model")
 print(classification_report(y_test, y_pred_svm_tfidf))
 
 # word cloud for positive review words plt.figure(figsize=(20, 20))
