@@ -87,6 +87,8 @@ svm.fit(X_train_tfidf, y_train)
 # Make predictions
 y_pred_svm_tfidf = svm.predict(X_test_tfidf)
 
+# <ale
+
 # Evaluate the model
 print("Accuracy of svm bow:", accuracy_score(y_test, y_pred_svm_bow))
 print("Evaluation of svm bow model")

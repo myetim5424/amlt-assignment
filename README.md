@@ -1,6 +1,6 @@
 # ASSIGNMENT
 
-## 1. Make sure that you have python 3.13.1 (not 3.13.0 or anything else) installed on your computer. If not, it is going to be a problem.
+## 1. Make sure that you have python 3.11 (I used 3.11.8) installed on your computer. If not, it is going to be a problem.
 ## 2. Make sure that you have the following packages installed:
 - click==8.1.8 
 - colorama==0.4.6

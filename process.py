@@ -52,6 +52,12 @@ def assign_sentiment_by_rating(rating):
 
 df = pd.read_csv("drugsComTest_raw.csv")
 
+# summary of the dataset
+print(df.info())
+
+print(df.columns)
+print(len(df))
+
 # get all the values you have in rating column
 print(df['rating'].value_counts())
 
