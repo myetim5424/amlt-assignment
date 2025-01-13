@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
+import pickle
 
 df = pd.read_csv("processed_dataset.csv")
 
@@ -64,7 +65,12 @@ print("Accuracy:", accuracy_score(y_test, y_pred_tfidf))
 print("Evaluation of tfidf model")
 print(classification_report(y_test, y_pred_tfidf))
 
-from sklearn.linear_model import LogisticRegression,SGDClassifier
+# Save the model
+with open('model.pkl', 'wb') as file:
+    pickle.dump(model_tfidf, file)
+
+
+from sklearn.linear_model import SGDClassifier
 
 # training the linear svm model
 svm=SGDClassifier(loss='hinge',max_iter=500,random_state=42)
